@@ -1,4 +1,0 @@
-
-/* v27 — acceso visible a planes desde la tarjeta de empresa */
-.company-switch{cursor:pointer;transition:background .18s ease,transform .18s ease}.company-switch:hover{background:#16243a;transform:translateY(-1px)}.company-switch:focus{outline:2px solid var(--blue);outline-offset:2px}.company-switch small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:190px}
-
