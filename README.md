@@ -1,32 +1,20 @@
-# Nexo
+# Nexo V37 — Experiencia guiada estable
 
-Aplicación web estática de Nexo, lista para subir directamente a GitHub/GitLab.
+## Novedades
+- Selección múltiple actualiza las tarjetas en el lugar, sin reconstruir toda la pantalla.
+- Elegir el giro cambia el estado de la tarjeta sin volver a renderizar la página.
+- Guarda automáticamente el borrador del asistente en el navegador.
+- Ofrece continuar una configuración sin terminar al volver a crear una empresa.
+- Conserva las preguntas por giro y la vista previa adaptativa de V36.
+- Evita envíos accidentales de formularios desde botones con acciones JavaScript.
+- Añade transiciones suaves y estados de foco accesibles.
 
-## Estructura
+## Probar
+1. Descomprime el ZIP completo en una carpeta nueva.
+2. Abre `index.html`.
+3. Pulsa Crear empresa y prueba varios giros.
+4. En preguntas con selección múltiple, marca y desmarca opciones: no debería parpadear toda la pantalla.
+5. Avanza algunas preguntas, cierra y vuelve a abrir el flujo; si el borrador existe, Nexo ofrecerá continuar.
 
-- `index.html` — entrada principal
-- `manifest.webmanifest` — configuración PWA
-- `assets/css/` — estilos
-- `assets/js/` — lógica de la aplicación
-- `assets/icons/` — iconos
-
-## Publicación
-
-Este proyecto no necesita Node.js para ejecutarse como sitio estático. Sube **todo el contenido de esta carpeta manteniendo la estructura de carpetas**.
-
-En GitHub Pages, selecciona la rama y la carpeta donde está `index.html`.
-
-
-## Experiencia Nexo
-
-Esta versión incorpora:
-- Configuración inicial por tipo de negocio.
-- Recomendación automática de aplicaciones.
-- Selector visual de aplicaciones activables.
-- Navegación agrupada y dinámica para evitar saturación.
-- Modos Nexo Simple y Nexo Profesional.
-- Administración de aplicaciones desde Configuración.
-- Nexo Studio como constructor visual.
-- Flujo "Créalo con IA" para convertir una descripción en una estructura inicial de aplicación.
-
-La interfaz conserva la identidad visual de Nexo y no replica la navegación visual de Odoo o Pulpos.
+## Límites
+Es un prototipo local: el borrador se guarda en `localStorage` de ese navegador. No sincroniza el progreso entre dispositivos ni reemplaza un backend autenticado.
